@@ -15,7 +15,7 @@
       <div class="container mx-auto">
         <div
           id="topbar"
-          class="flex justify-between items-center text-white pt-4"
+          class="md:flex justify-between items-center text-white pt-4 hidden"
         >
           <div class="flex justify-center items-center">
             <div class="flex flex-col items-end">
@@ -66,18 +66,42 @@
           </div>
         </div>
         <nav
-          id="main"
-          class="bg-white flex relative rounded justify-end mt-3 border"
+          id="main-nav"
+          class="
+            bg-white
+            h-auto
+            flex flex-col
+            md:flex-row
+            relative
+            md:rounded md:justify-end md:mt-3 md:border
+          "
         >
           <a
             href="#"
             id="logo"
-            class="absolute left-12 top-2/4 border rounded-full"
+            class="
+              md:absolute md:left-12 md:top-2/4 md:border md:w-auto md:h-auto
+              h-16
+              w-16
+              block
+              rounded-full
+            "
             ><img src="./images/hero/logo.svg" alt="Logo" />
           </a>
+          <button id="menu-toggle" class="absolute md:hidden right-8 top-2">
+            <svg viewBox="0 0 100 80" width="40" height="40">
+              <rect width="100" height="20" rx="8"></rect>
+              <rect y="30" width="100" height="20" rx="8"></rect>
+              <rect y="60" width="100" height="20" rx="8"></rect>
+            </svg>
+          </button>
           <ul
+            id="main-menu"
             class="
-              flex
+              hidden
+              md:flex
+              flex-col
+              md:flex-row
               border border-solid
               items-center
               w-full
@@ -90,7 +114,17 @@
               <a href="#" class="hover:text-red">Η ΟΜΟΣΠΟΝΔΙΑ</a>
               <ul
                 id="dropdown-menu"
-                class="bg-white absolute mt-8 -ml-6 z-10 w-80 p-5 rounded"
+                class="
+                  bg-white
+                  hidden
+                  absolute
+                  mt-8
+                  -ml-6
+                  z-10
+                  w-80
+                  p-5
+                  rounded
+                "
               >
                 <li class="hover:text-red mb-2"><a href="#">Ιστορία</a></li>
                 <li class="hover:text-red mb-2">
@@ -144,7 +178,7 @@
           <img
             id="paf-logo"
             src="./images/hero/PAF.svg"
-            class="absolute mt-5"
+            class="absolute mt-5 hidden md:block"
             alt="paf"
           />
         </nav>
@@ -153,7 +187,8 @@
           class="
             mx-auto
             text-white text-center
-            p-10
+            p-5
+            md:p-10
             border-solid border-white
             rounded-full
             box-border
@@ -164,9 +199,9 @@
             class="mx-auto"
             alt="greekicon"
           />
-          <h3 class="mt-2 mb-8 text-xs font-bold">ΚΑΛΩΣ ΗΛΘΑΤΕ</h3>
+          <h3 class="mt-2 md:mb-8 text-xs font-bold">ΚΑΛΩΣ ΗΛΘΑΤΕ</h3>
           <h2 class="font-bold text-2xl">Η αποστολή μας</h2>
-          <p class="my-8 text-base leading-7">
+          <p class="my-4 md:my-8 text-base md:leading-7">
             Ο Παναρκαδικής Ομοσπονδίας Αμερικής είναι μια πανεθνική μη
             κερδοσκοπικού αδελφό ελληνικό-αμερικανική οργάνωση τα μέλη της
             οποίας κατεβαίνουν από την περιοχή της Αρκαδίας στην Πελοπόννησο,
@@ -182,8 +217,10 @@
               items-center
               border border-white
               rounded
-              w-52
-              h-12
+              w-40
+              md:w-52
+              h-8
+              md:h-12
               font-bold
             "
             >ΠΕΡΙΣΣΟΤΕΡΑ</a
@@ -191,5 +228,13 @@
         </div>
       </div>
     </header>
+    <script>
+      function toggle() {
+        document.querySelector("#main-menu").classList.toggle("hidden");
+        document.querySelector("#main-menu").classList.toggle("flex");
+      }
+
+      document.querySelector("#menu-toggle").addEventListener("click", toggle);
+    </script>
   </body>
 </html>

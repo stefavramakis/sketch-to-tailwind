@@ -47,18 +47,6 @@ header > div {
   font-family: "ProximaNova";
 }
 
-nav {
-  height: 60px;
-}
-
-#logo {
-  transform: translateY(-50%);
-  border: 10px #ab0427 solid;
-}
-nav > ul {
-  padding-left: 283px;
-  padding-right: 40px;
-}
 #paf-logo {
   top: 100%;
   left: 235px;
@@ -75,9 +63,29 @@ nav > ul {
 #featured {
   background: url(./images/circle.png) 0 0 no-repeat;
   background-size: 100% 100%;
-  width: 502px;
-  height: 502px;
-  margin-top: 70px;
+  width: 350px;
+  height: 350px;
+  margin-top: 40px;
   border-width: 6px;
   box-shadow: 0 0 40px rgba(0, 0, 0, 0.25);
+}
+
+@media (min-width: 768px) {
+  nav > ul {
+    padding-left: 283px;
+    padding-right: 40px;
+  }
+
+  #logo {
+    transform: translateY(-50%);
+    border: 10px #ab0427 solid;
+  }
+  #main-nav {
+    height: 60px;
+  }
+  #featured {
+    width: 502px;
+    height: 502px;
+    margin-top: 70px;
+  }
 }
