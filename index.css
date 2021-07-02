@@ -39,9 +39,35 @@ header > div {
 }
 
 #topbar {
-  max-width: 1460px;
+  margin-right: 40px;
+  margin-left: 235px;
 }
 
 .font-proxima {
   font-family: "ProximaNova";
+}
+
+nav {
+  height: 60px;
+}
+
+#logo {
+  transform: translateY(-50%);
+  border: 10px #ab0427 solid;
+}
+nav > ul {
+  padding-left: 283px;
+  padding-right: 40px;
+}
+#paf-logo {
+  top: 100%;
+  left: 235px;
+}
+
+.text-blue {
+  color: #002868;
+}
+
+.hover\:text-red:hover {
+  color: #bf0a30;
 }
