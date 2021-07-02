@@ -1,0 +1,71 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <div class="container mx-auto">
+        <div
+          id="topbar"
+          class="flex justify-between items-center text-white pt-4"
+        >
+          <div class="flex justify-center items-center">
+            <div class="flex flex-col items-end">
+              <h3 class="text-xs leading-none font-bold">ΑΡΚΑΔΙΑ</h3>
+              <div class="flex">
+                <img src="./images/hero/clock.svg" alt="clock" />
+                <div class="font-proxima text-2xl leading-none">13:28</div>
+              </div>
+            </div>
+            <div class="ml-5 flex flex-col items-end">
+              <h3 class="text-xs leading-none font-bold">ΚΑΤΑΙΓΙΔΑ</h3>
+              <div class="flex">
+                <div id="temperature" class="flex">
+                  <img src="./images/hero/weather.svg" alt="weather" />
+                  <span id="deegres" class="font-proxima text-2xl leading-none"
+                    >12</span
+                  >
+                  <a
+                    id="unitc"
+                    href="#"
+                    class="font-proxima text-2xl leading-none"
+                    >°C</a
+                  >
+                  <a
+                    id="unitf"
+                    href="#"
+                    class="font-proxima text-2xl leading-none opacity-60"
+                    >°F</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flex justify-center items-center">
+            <div class="flex mr-10">
+              <img
+                class="w-6 h-6"
+                id="login"
+                src="./images/hero/login.svg"
+                alt="login"
+              />
+              <a id="login-button" class="mb-2 ml-1" href="#"
+                >Εγγραφή / Σύνδεση</a
+              >
+            </div>
+
+            <img src="./images/hero/language.svg" alt="language" />
+          </div>
+        </div>
+      </div>
+    </header>
+  </body>
+</html>
