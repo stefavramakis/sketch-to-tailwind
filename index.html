@@ -88,7 +88,7 @@
             "
             ><img src="./images/hero/logo.svg" alt="Logo" />
           </a>
-          <button id="menu-toggle" class="absolute md:hidden right-8 top-2">
+          <button id="menu-toggle" class="absolute md:hidden right-4 top-2">
             <svg viewBox="0 0 100 80" width="40" height="40">
               <rect width="100" height="20" rx="8"></rect>
               <rect y="30" width="100" height="20" rx="8"></rect>
@@ -228,6 +228,62 @@
         </div>
       </div>
     </header>
+    <div id="census" class="flex flex-col mx-auto w-full">
+      <img
+        id="treelogo"
+        class="mt-10"
+        src="./images/hero/tree.svg"
+        alt="tree"
+      />
+      <h2 class="my-10 text-5xl mx-auto font-bold text-center">
+        Μετριόμαστε, γιατί μετράμε!
+      </h2>
+      <section class="md:flex leading-6 mx-auto">
+        <div id="census-left">
+          <h2 class="font-bold leading-5 text-blue">
+            Γενική απογραφή των αποδήμων Αρκάδων στις ΗΠΑ και επαναπατρισθέντων
+            από τις ΗΠΑ
+          </h2>
+          <p class="text-base leading-6">
+            Η Παναρκαδική Ομοσπονδία Αμερικής πραγματοποιεί απογραφή των Αρκάδων
+            που διαμένουν και εργάζονται στις ΗΠΑ, (ανεξαρτήτως υπηκότητας).
+          </p>
+          <h3 class="font-bold text-base">
+            Το αποτύπωμα της Αρκαδικής γης μας συνδέει!
+          </h3>
+          <p class="text-base leading-6">
+            Όση χιλιομετρική απόσταση και αν μας χωρίζει, όσες γενιές και να
+            έχουμε...ψηλώσει πέρα απο τις ρίζες μας, η Αρκαδία, μας ενώνει!
+          </p>
+        </div>
+        <div id="census-right" class="flex flex-col justify-between">
+          <h2 class="font-bold leading-5 text-blue">Απογραφόμαστε...</h2>
+          <ul class="pl-5 text-base">
+            <li>Για να γνωρίσουμε ο ένας τον άλλο.</li>
+            <li>
+              Για να αντλήσουμε δύναμη απο τις ρίζες μας και την καταγωγή μας.
+            </li>
+            <li>
+              Για να είμαστε χρήσιμοι και να παρεμβαίνουμε δημιουργικά για τις
+              ΗΠΑ την Ελλάδα και την Αρκαδία.
+            </li>
+            <li>Για να υλοποιήσουμε τα σχέδια και τα οραματά μας.</li>
+            <li>Για να είμαστε ισχυροί.</li>
+          </ul>
+        </div>
+      </section>
+      <section id="census-info" class="flex flex-col mx-auto">
+        <h3 class="mx-auto font-bold mt-10">ΤΕΛΕΤΗ ΕΝΑΡΞΗΣ</h3>
+        <span id="census-date" class="mx-auto font-bold text-blue mt-3"
+          >Παρασκευή 20 Απριλίου 2108</span
+        >
+        <span
+          id="census-location"
+          class="mx-auto font-bold text-lg mt-3 mb-14 text-blue"
+          >ΝΕΑ ΥΟΡΚΗ</span
+        >
+      </section>
+    </div>
     <script>
       function toggle() {
         document.querySelector("#main-menu").classList.toggle("hidden");

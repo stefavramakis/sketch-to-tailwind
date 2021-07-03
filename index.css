@@ -38,6 +38,11 @@ header > div {
   width: 1078px;
 }
 
+/* common */
+.red-color {
+  color: #bf0a30;
+}
+
 #topbar {
   margin-right: 40px;
   margin-left: 235px;
@@ -69,6 +74,68 @@ header > div {
   border-width: 6px;
   box-shadow: 0 0 40px rgba(0, 0, 0, 0.25);
 }
+
+/* CENSUS */
+
+#census {
+  background: url("./images/bg-census.png") bottom center no-repeat;
+  background-size: cover;
+  height: 744px;
+}
+
+#census > h2 {
+  color: #bf0a30;
+  line-height: 50px;
+}
+
+#census-left {
+  margin-right: 60px;
+  max-width: 464px;
+}
+
+#census-left > h2 {
+  margin-bottom: 10px;
+}
+
+#census-left > h3 {
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+#census-right {
+  max-width: 475px;
+}
+
+#census-right > ul {
+  list-style-image: url("./images/icons/blue-caret.svg");
+}
+
+#census-right > ul > li + li {
+  margin-top: 10px;
+}
+
+#census-right > ul > li:nth-child(3) {
+  margin-top: 5px;
+}
+#census-right > ul > li:nth-child(4) {
+  margin-top: 0;
+}
+
+#census > section h2 {
+  font-size: 18px;
+}
+
+#census-info > h3 {
+  color: #bf0a30;
+  font-size: 18px;
+}
+
+#census-date {
+  font-size: 34px;
+  margin-top: 5px;
+}
+
+/*  fullscreen */
 
 @media (min-width: 768px) {
   nav > ul {
