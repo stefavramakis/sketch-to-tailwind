@@ -145,9 +145,41 @@ header > div {
 }
 
 #actions > ul > li + li {
-  margin-left: 20px;
+  /* margin-left: 20px; */
 }
 
+/* FORM */
+
+#contact-form > form {
+  width: 740px;
+  border-color: #eeeeee;
+}
+
+#contact-form input {
+  border-color: #b6b6b6;
+}
+
+#contact-form input[name="phone"] {
+  background: url("./images/icons/phone.svg") no-repeat scroll 16px 16px;
+}
+
+#contact-form input[name="email"] {
+  background: url("./images/icons/email.svg") no-repeat scroll 16px 16px;
+}
+
+#contact-form textarea {
+  height: 120px;
+  border-color: #b6b6b6;
+  resize: none;
+}
+
+#contact-form-controls {
+  width: 740px;
+}
+
+#contact-form button {
+  background: #bf0a30;
+}
 /*  fullscreen */
 
 @media (min-width: 768px) {
