@@ -180,6 +180,13 @@ header > div {
 #contact-form button {
   background: #bf0a30;
 }
+
+/* FOOTER */
+
+footer {
+  background: #002868;
+}
+
 /*  fullscreen */
 
 @media (min-width: 768px) {
