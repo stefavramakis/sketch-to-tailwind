@@ -430,9 +430,16 @@
     </div>
     <footer class="flex flex-col items-center">
       <a
-        href="/"
+        href="#"
         id="to-top "
-        class="absolute self-end transform -translate-y-2/4 right-24"
+        class="
+          absolute
+          self-end
+          transform
+          -translate-y-2/4
+          md:right-24
+          right-12
+        "
         ><img src="./images/icons/to-top.svg" alt="totop"
       /></a>
       <img class="mt-8" src="./images/hero/logo.svg" alt="Logo" />
@@ -467,7 +474,8 @@
       <ul
         id="footer-menu"
         class="
-          flex
+          flex flex-col
+          md:flex-row
           mt-8
           items-center
           justify-between
@@ -476,16 +484,18 @@
         "
       >
         <li class="hover:text-red"><a href="#">Η ΟΜΟΣΠΟΝΔΙΑ</a></li>
-        <li class="ml-10 hover:text-red"><a href="#">ΑΡΚΑΔΩΝ ΕΡΓΑ</a></li>
-        <li class="ml-10 hover:text-red"><a href="#">ΕΠΩΝΥΜΟΙ ΑΡΚΑΔΕΣ</a></li>
-        <li class="ml-10 hover:text-red"><a href="#">ΝΕΑ - ΕΝΗΜΕΡΩΣΗ</a></li>
-        <li class="ml-10 hover:text-red">
+        <li class="md:ml-10 hover:text-red"><a href="#">ΑΡΚΑΔΩΝ ΕΡΓΑ</a></li>
+        <li class="md:ml-10 hover:text-red">
+          <a href="#">ΕΠΩΝΥΜΟΙ ΑΡΚΑΔΕΣ</a>
+        </li>
+        <li class="md:ml-10 hover:text-red"><a href="#">ΝΕΑ - ΕΝΗΜΕΡΩΣΗ</a></li>
+        <li class="md:ml-10 hover:text-red">
           <a href="#">ΕΠΙΣΚΕΨΗ ΣΤΗΝ ΑΡΚΑΔΙΑ</a>
         </li>
-        <li class="ml-10 hover:text-red">
+        <li class="md:ml-10 hover:text-red">
           <a href="#">ΑΝΑΖΗΤΗΣΕΙΣ ΣΤΗΝ ΑΡΚΑΔΙΑ</a>
         </li>
-        <li class="ml-10 hover:text-red"><a href="#">ΕΠΙΚΟΙΝΩΝΙΑ</a></li>
+        <li class="md:ml-10 hover:text-red"><a href="#">ΕΠΙΚΟΙΝΩΝΙΑ</a></li>
       </ul>
       <div id="signature" class="text-sm text-white text-opacity-50 mt-2 mb-3">
         ©2018 Pan Arcadian Federation of America
