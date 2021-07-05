@@ -134,10 +134,6 @@ header > div {
   width: 300px;
 }
 
-#actions > ul > li + li {
-  /* margin-left: 20px; */
-}
-
 /* FORM */
 
 #contact-form > form {
