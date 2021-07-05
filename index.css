@@ -80,17 +80,11 @@ header > div {
 #census {
   background: url("./images/bg-census.png") bottom center no-repeat;
   background-size: cover;
-  height: 744px;
 }
 
 #census > h2 {
   color: #bf0a30;
   line-height: 50px;
-}
-
-#census-left {
-  margin-right: 60px;
-  max-width: 464px;
 }
 
 #census-left > h2 {
@@ -100,10 +94,6 @@ header > div {
 #census-left > h3 {
   margin-top: 10px;
   margin-bottom: 15px;
-}
-
-#census-right {
-  max-width: 475px;
 }
 
 #census-right > ul {
@@ -199,12 +189,27 @@ footer {
     transform: translateY(-50%);
     border: 10px #ab0427 solid;
   }
+
   #main-nav {
     height: 60px;
   }
+
   #featured {
     width: 502px;
     height: 502px;
     margin-top: 70px;
+  }
+
+  #census {
+    height: 744px;
+  }
+
+  #census-left {
+    margin-right: 60px;
+    max-width: 464px;
+  }
+
+  #census-right {
+    max-width: 475px;
   }
 }
