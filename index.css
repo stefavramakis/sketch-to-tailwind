@@ -31,16 +31,10 @@ header {
   background: url("../images/hero/bg.png") bottom center no-repeat;
   background-size: cover;
   height: 750px;
-  /* width: 100%; */
 }
 
 header > div {
   width: 1078px;
-}
-
-/* common */
-.red-color {
-  color: #bf0a30;
 }
 
 #topbar {
@@ -116,9 +110,6 @@ header > div {
 }
 
 /* ACTIONS */
-#actions {
-  background-color: #002868;
-}
 
 #actions > ul > li {
   width: 300px;
@@ -154,12 +145,6 @@ header > div {
 
 #contact-form button {
   background: #bf0a30;
-}
-
-/* FOOTER */
-
-footer {
-  background: #002868;
 }
 
 /*  fullscreen */
