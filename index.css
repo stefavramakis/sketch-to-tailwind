@@ -137,7 +137,6 @@ header > div {
 /* FORM */
 
 #contact-form > form {
-  width: 740px;
   border-color: #eeeeee;
 }
 
@@ -207,5 +206,9 @@ footer {
 
   #census-right {
     max-width: 475px;
+  }
+
+  #contact-form > form {
+    width: 740px;
   }
 }
