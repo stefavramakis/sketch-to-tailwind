@@ -1,0 +1,21 @@
+{
+  "name": "sketch-to-tailwind",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npx tailwindcss-cli build -i ./index.css -o ./build/index.css ",
+    "dev": "npx tailwindcss-cli build -i ./index.css -o ./build/index.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stefavramakis/sketch-to-tailwind.git"
+  },
+  "author": "Stefanos Avramakis",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/stefavramakis/sketch-to-tailwind/issues"
+  },
+  "homepage": "https://github.com/stefavramakis/sketch-to-tailwind#readme"
+  
+}

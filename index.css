@@ -28,7 +28,7 @@ body {
 }
 
 header {
-  background: url("./images/hero/bg.png") bottom center no-repeat;
+  background: url("../images/hero/bg.png") bottom center no-repeat;
   background-size: cover;
   height: 750px;
   /* width: 100%; */
@@ -57,16 +57,8 @@ header > div {
   left: 235px;
 }
 
-.text-blue {
-  color: #002868;
-}
-
-.hover\:text-red:hover {
-  color: #bf0a30;
-}
-
 #featured {
-  background: url(./images/circle.png) 0 0 no-repeat;
+  background: url(../images/circle.png) 0 0 no-repeat;
   background-size: 100% 100%;
   width: 350px;
   height: 350px;
@@ -78,12 +70,11 @@ header > div {
 /* CENSUS */
 
 #census {
-  background: url("./images/bg-census.png") bottom center no-repeat;
+  background: url("../images/bg-census.png") bottom center no-repeat;
   background-size: cover;
 }
 
 #census > h2 {
-  color: #bf0a30;
   line-height: 50px;
 }
 
@@ -97,7 +88,7 @@ header > div {
 }
 
 #census-right > ul {
-  list-style-image: url("./images/icons/blue-caret.svg");
+  list-style-image: url("../images/icons/blue-caret.svg");
 }
 
 #census-right > ul > li + li {
@@ -116,7 +107,6 @@ header > div {
 }
 
 #census-info > h3 {
-  color: #bf0a30;
   font-size: 18px;
 }
 
@@ -145,11 +135,11 @@ header > div {
 }
 
 #contact-form input[name="phone"] {
-  background: url("./images/icons/phone.svg") no-repeat scroll 16px 16px;
+  background: url("../images/icons/phone.svg") no-repeat scroll 16px 16px;
 }
 
 #contact-form input[name="email"] {
-  background: url("./images/icons/email.svg") no-repeat scroll 16px 16px;
+  background: url("../images/icons/email.svg") no-repeat scroll 16px 16px;
 }
 
 #contact-form textarea {
@@ -212,3 +202,7 @@ footer {
     width: 740px;
   }
 }
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

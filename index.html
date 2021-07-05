@@ -3,12 +3,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./index.css" />
-    <link
-      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
-      rel="stylesheet"
-    />
-    <title>Document</title>
+    <link rel="stylesheet" href="./build/index.css" />
+    <title>PanArcadian</title>
   </head>
   <body>
     <header>
@@ -235,7 +231,7 @@
         src="./images/hero/tree.svg"
         alt="tree"
       />
-      <h2 class="my-10 text-5xl mx-auto font-bold text-center">
+      <h2 class="my-10 text-5xl mx-auto font-bold text-red text-center">
         Μετριόμαστε, γιατί μετράμε!
       </h2>
       <div class="md:flex leading-6 mx-auto">
@@ -260,7 +256,9 @@
           id="census-right"
           class="flex flex-col justify-between md:px-0 px-8"
         >
-          <h2 class="font-bold leading-5 text-blue">Απογραφόμαστε...</h2>
+          <h2 class="font-bold leading-5 text-blue mt-4 md:mt-0">
+            Απογραφόμαστε...
+          </h2>
           <ul class="pl-5 text-base">
             <li>Για να γνωρίσουμε ο ένας τον άλλο.</li>
             <li>
@@ -277,7 +275,7 @@
       </div>
       <div
         id="census-info"
-        class="flex flex-col mx-auto md:px-0 px-8 text-center"
+        class="flex flex-col text-red mx-auto md:px-0 px-8 text-center"
       >
         <h3 class="mx-auto font-bold mt-10">ΤΕΛΕΤΗ ΕΝΑΡΞΗΣ</h3>
         <span id="census-date" class="mx-auto font-bold text-blue mt-3"
@@ -414,6 +412,7 @@
             border
             h-12
             w-60
+            bg-red
             items-center
             justify-center
             cursor-pointer
